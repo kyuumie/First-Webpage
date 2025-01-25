@@ -1,0 +1,469 @@
+<HTML>
+    <HEAD>
+        <title>All about Ace</title>
+    </HEAD>
+
+        <style>
+            .navbar {
+                background-color: #ff9bc9; 
+                padding: 10px 0;
+                position: sticky;
+                top: 0;
+                z-index: 1000;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);              
+            }   
+                .navbar ul {
+                    display: flex;
+                    justify-content: center;
+                    gap: 20px;
+                    list-style: none;
+                    padding: 0;
+                    margin: 0;
+                }   
+                .navbar li {
+                    display: inline;
+                }    
+                .navbar a {
+                    text-decoration: none;
+                    color: rgb(0, 0, 0); 
+                    font-family: Tw Cen MT;
+                    font-size: 16px;
+                    padding: 8px 15px;
+                    border-radius: 5px;
+                    transition: background-color 0.3s ease;
+                }   
+                .navbar a:hover {
+                    background-color: #b058b0; 
+                }   
+                    section {
+                        margin: 0px auto;                       
+                        max-width: 1000px;
+                    }
+                    
+            .HEADER > header {
+				text-align: center;
+			 	font-family: Brush Script MT;		
+			 	font-size: 30px;
+			 	color: #4D4D4D;
+			}
+            
+            .MYSELF {
+                display: grid;
+                grid-template-columns: repeat(6, 1fr);
+                gap: 5px; 
+                justify-items: center; 
+            }            
+                .ME img {
+                    width: 100%; 
+                    height: auto;
+                    border-radius: 8px; 
+                    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+                }
+
+            .PERSONAL > h1 {		
+				text-align: center;
+			  	font-family: Papyrus;			  
+			  	color: #4D4D4D ;		  
+			}
+                .PERSONAL > p {			
+                    text-align: center;		  
+                    font-family: Tw Cen MT;			  
+                    color: #000000 ;	
+                    font-size: 17px;	  
+                }
+
+            .EDUCATION > h1 {		
+				text-align: center;
+			  	font-family: Papyrus;			  
+			  	color: #4D4D4D ;		  
+			}
+                .COLLEGE > h2 {
+                    text-align: center;		  
+                    font-family: Tw Cen MT;			  
+                    color: #343333 ;	
+                    font-size: 25px;	
+                }
+
+                .COLLEGE > p { 
+                    text-align: center;		  
+                    font-family: Tw Cen MT;			  
+                    color: #000000 ;	
+                    font-size: 17px;	
+                }	
+            
+            .SUBJECTS > h1 {
+                text-align: center; 
+                font-family: Papyrus;			  
+                color: #4D4D4D ;
+            }                       
+                .SUBJECTS table {
+                    margin: 0 auto; 
+                    width: 80%; 
+                    border-collapse: collapse; 
+                    font-size: 18px; 
+                    font-family: Tw Cen MT;
+                }            
+                .SUBJECTS table td {
+                    text-align: center; 
+                    padding: 10px; 
+                    border: 1px solid black; 
+                }            
+                .SUBJECTS table tr:nth-child(even) {
+                    background-color: #e486d4; 
+                }            
+                .SUBJECTS table tr:hover {
+                    background-color: #e186e4; 
+                }
+            
+            .OTHERS > H1{
+                text-align: center;
+			  	font-family: Papyrus;			  
+			  	color: #4D4D4D ;
+            }
+                .CONTAINER {
+                    display: flex;
+                    justify-content: space-between; 
+                    gap: 20px; 
+                }
+                .COLUMN {
+                    flex: 1; 
+                    text-align: center;
+                    font-family: Tw Cen MT;			  
+                    color: #000000;
+                }
+                .COLUMN ul {
+                    flex: 1; 
+                    text-align: left;
+                    font-family: Tw Cen MT;			  
+                    color: #000000;
+                }
+            
+            .TAMBAYAN > h1{
+                text-align: center;
+			  	font-family: Papyrus;			  
+			  	color: #4D4D4D ;
+            }    
+                .COLUMN img {
+                    width: 100%;
+                    max-height: 300px; 
+                    object-fit: cover; 
+                    border-radius: 10px;
+                    border: 1px solid #ccc;
+                }
+                .COLUMN h3 {
+                    margin: 10px 0 5px; 
+                    font-size: 18px; 
+                }
+                .COLUMN p {
+                    font-size: 14px; 
+                    color: #000000; 
+                    font-family: Tw Cen MT;	
+                }
+            
+            .FRIENDS > H1{
+                text-align: center;
+			  	font-family: Papyrus;			  
+			  	color: #4D4D4D ;
+            }
+            .friend-collage {
+                display: grid;
+                grid-template-columns: repeat(5, 1fr); 
+                gap: 15px; 
+                margin-bottom: 30px; 
+            }            
+                .friend-image img {
+                    width: 100%;
+                    height: auto;
+                    border-radius: 8px;
+                }
+                
+                .essay {   
+                    margin-right: 100px;
+			  	    margin-left: 100px;               
+                    line-height: 1.6;        
+                    height:0 px;                               
+                    text-align: center;
+                    font-family: Tw Cen MT;			  
+                    color: #000000 ;
+                }
+            
+            .SCHOOL > H1{
+                text-align: center;
+			  	font-family: Papyrus;			  
+			  	color: #4D4D4D ;
+            }
+
+            .social {
+                text-align: center;
+                margin-top: 20px;
+            }
+                .social > h2{
+                    text-align: center;
+                    margin-top: 20px;
+                    font-family: Papyrus;
+                    color:#4D4D4D;
+                }
+                .social > h5{
+                    text-align: center;
+                    margin-top: 20px;
+                    font-family: Tw Cen MT;
+                    color:#000000;
+                }               
+                .social a {
+                    text-decoration: none;
+                    color: #000;
+                    font-family: "Tw Cen MT", sans-serif;
+                    font-size: 16px;
+                    margin: 0 100px;
+                    transition: color 0.3s ease;
+                }                
+                .social a:hover {
+                    color: #c269c2;
+                }
+        </style>
+
+        <body style="background-color:#c269c2; background-image: url('images/pastel.jpg'); background-size: cover; background-attachment: fixed;">
+
+            <section id="personal"></section>
+            <div class = "HEADER"> 
+                <header><strong>Life, Studies, and Everything In Between</strong></header>
+            </div> 
+            <hr>         
+        
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#personal">Personal Information</a></li>
+                    <li><a href="#studies">Current Studies</a></li>
+                    <li><a href="#hobbies">Interests & Hobbies</a></li>
+                    <li><a href="#tambayan">Hangout Spot</a></li>
+                    <li><a href="#friends">Friends</a></li>
+                    <li><a href="#school">Me in School</a></li>
+                    <li><a href="#links">Social Links</a></li>
+                </ul>
+            </nav>
+
+            
+            <div class = "PERSONAL">
+                <h1>Personal Information</h1> 
+                    <div class="MYSELF">
+                        <div class="ME">
+                            <img src="images/me1.jpg" alt="Me 1">
+                        </div>
+                        <div class="ME">
+                            <img src="images/me2.jpg" alt="Me 2">
+                        </div>
+                        <div class="ME">
+                            <img src="images/me3.jpg" alt="Me 3">
+                        </div>
+                        <div class="ME">
+                            <img src="images/me4.jpg" alt="Me 4">
+                        </div>
+                        <div class="ME">
+                            <img src="images/me5.jpg" alt="Me 5">
+                        </div>
+                        <div class="ME">
+                            <img src="images/me6.jpg" alt="Me 6">
+                        </div> <br>
+                    </div>
+                            <p><b>Name: </b>Mica Ace D. Cordivilla</p>
+                            <p><b>Address: </b>22 Honradez St. Brgy. Tugatog Malabon City</p>					
+                            <p><b>Birthdate: </b>November 1, 2005</p> <section id="studies"></section>
+                            <p><b>Age: </b>19</p> 
+            </div> <br>
+            <hr> 
+            
+            <div class = "EDUCATION">
+                <h1>Current Studies</h1>
+            </div>
+                <div class="College">
+                    <h2>College:</h2>
+                            <p><b>School: </b>University of the East - Caloocan</p>
+                            <p><b>Address: </b>105 Samson Road, Sangandaan, Caloocan</p>
+                            <p><b>Student Number: </b>20211114782</p>	
+                            <p><b>College of : </b>Engineering</p>	
+                            <p><b>Course: </b>Bachelor of Science in Information Technology</p>		
+                            <p><b>Year: </b>2023 - 2027</p>				
+                </div>
+            <br>
+
+            <div class = "SUBJECTS">
+                <h1>Enrolled Subjects</h1>
+                <table border="1">
+                    <tr>
+                        <td><b>CIA 1101</b></td>
+                        <td>Information Assurance and Security 1</td>
+                    </tr>
+                    <tr>
+                        <td><b>CIT 2201</b></td>
+                        <td>Networking 1</td>
+                    </tr>
+                    <tr>
+                        <td><b>CHC 1101</b></td>
+                        <td>Human Computer Interaction</td>
+                    </tr>
+                    <tr>
+                        <td><b>CSA 1101</b></td>
+                        <td>Systems Analysis, Design and Prototyping</td>
+                    </tr>
+                    <tr>
+                        <td><b>CIP 1101</b></td>
+                        <td>Integrative Programming and Technologies 1</td>
+                    </tr>
+                    <tr>
+                        <td><b>CDT 1101</b></td>
+                        <td>Data Analytics</td>
+                    </tr>
+                    <tr>
+                        <td><b>PPF 2308</b></td>
+                        <td>Social Recreation</td>
+                    </tr>
+                    <tr>
+                        <td><b>ZGE 4305</b></td> 
+                        <td>Religions, Religious Experiences and Spirituality</td> 
+                    </tr> 
+                </table>
+                <section id="hobbies"></section> <br> 
+            </div> 
+            <BR> 
+            <hr>
+            <br>
+
+            <div class="OTHERS">
+                <h1>Interest and Hobbies</h1>
+            </div>
+        
+            <div class="CONTAINER">
+                <div class="COLUMN">
+                    <h2>Personal</h2>
+                    <ul>
+                        <li>Emotional Intelligence</li>
+                        <li>Leadership development</li>
+                        <li>Time management techniques</li>
+                    </ul>
+                </div>
+        
+                <div class="COLUMN">
+                    <h2>Academic</h2>
+                    <ul>
+                        <li>Full-stack development</li>
+                        <li>Data Analytics</li>
+                        <li>Web Development</li>
+                    </ul>
+                </div>
+        
+                <div class="COLUMN">
+                    <h2>Hobbies</h2>
+                    <ul>
+                        <li>Sleeping</li>
+                        <li>Practicing Pilates</li>
+                        <li>Grinding on Genshin Impact</li> 
+                        <li>Playing Valorant and Wild Rift with friends</li> <section id="tambayan"></section>
+                        <li>Scrolling through TikTok until midnight</li> 
+                    </ul>
+                </div>
+            </div> 
+            <hr> 
+
+            <br>
+            <div class="TAMBAYAN">
+                <h1>Favorite Hangout Spot</h1>
+            </div>
+            
+            <div class="CONTAINER">
+                <div class="COLUMN">
+                    <h3>Rooms</h3>
+                    <img src="images/hallway.jpg" alt="Hallway">
+                    <p>My friends and I often hang out in the empty classrooms during our 30-minute breaks before the next class. It’s a convenient spot since going outside to eat would take longer than our short break allows.</p>
+                </div>
+                
+                <div class="COLUMN">
+                    <h3>Coffee Shop</h3>
+                   <img src="images/coffee.jpg" alt="Coffee Shop">
+                    <p>There’s a coffee shop called Black in Caimito Place that we visit occasionally, especially when our professors dismiss us early. Their croissants are amazing—definitely worth returning for. However, the coffee and other food items are a bit pricey, so I’d only go back for the croissant.</p>
+                </div>
+                
+                <div class="COLUMN">
+                    <h3>Field</h3>
+                    <img src="images/field.jpg" alt="Field">
+                    <p>The field is a classic hangout spot for me. I love being surrounded by nature and feeling the wind on my face. It’s a place where the noisy environment somehow becomes peaceful.</p><section id="friends"></section>
+                </div> 
+            </div> 
+            <br> 
+            <hr>
+
+            <div class="FRIENDS">
+                <h1>Friends</h1>
+            </div>
+            
+            <div class="friend-collage">
+                <div class="friend-image">
+                    <img src="images/friend1.jpg" alt="Friend 1">
+                </div>
+                <div class="friend-image">
+                    <img src="images/friend2.jpg" alt="Friend 2">
+                </div>
+                <div class="friend-image">
+                    <img src="images/friend3.jpg" alt="Friend 3">
+                </div>
+                <div class="friend-image">
+                    <img src="images/friend4.jpg" alt="Friend 4">
+                </div>
+                <div class="friend-image">
+                    <img src="images/friend5.jpg" alt="Friend 5">
+                </div>
+                <div class="friend-image">
+                    <img src="images/friend6.jpg" alt="Friend 6">
+                </div>
+                <div class="friend-image">
+                    <img src="images/friend7.jpg" alt="Friend 7">
+                </div>
+                <div class="friend-image">
+                    <img src="images/friend8.jpg" alt="Friend 8">
+                </div>
+                <div class="friend-image">
+                    <img src="images/friend9.jpg" alt="Friend 9">
+                </div>
+                <div class="friend-image">
+                    <img src="images/friend10.jpg" alt="Friend 10">
+                </div>
+            </div>
+            
+            <div class="essay">
+                <p>
+                    These are the people who found me at my lowest point and accepted me for who I am. They’ve supported me in ways they may not even be aware of, and for that, I am endlessly grateful. Each of them is a good person at heart, navigating their own struggles, but we never turn a blind eye when someone is in need. We look out for each other and always make sure everyone is okay—that’s who we are. <br><br>
+
+                    No matter how flawed they may think they are, to me, they’re the kind of people worth spending time with. I love them deeply and treasure every moment we share. It’s bittersweet to think that in two years, we’ll all be heading in different directions, chasing our own dreams. Still, I’ll always be proud of them and will continue to hope for their success in life. <br><br>
+
+                    We protect each other, and that bond is something I’ll carry with me forever. 
+                </p>
+            </div>
+            <br> 
+            <hr>
+            <br>
+
+            <div section id="school" class="SCHOOL">
+                <h1>Something About Me in School</h1>
+            </div>
+                <div class="essay">
+                    <p>
+                        As an IT student, I don’t consider myself the smartest in the class, but I always give my best in completing activities and quizzes. I believe in maintaining healthy relationships with others because it helps me stay connected and fosters a positive environment. I tend to be strict with deadlines to avoid piling up tasks, as I like staying organized. I take pride in when others rely on me for support or guidance. I was once a scholar and am determined to regain that status this semester, hoping to achieve the same level of success.
+                        <br><br>
+                        There are subjects that challenge me, but I’m committed to dedicating time and effort to truly understand them. Though I’m still uncertain about my specific career path, my performance in recent projects has shown that I could pursue both front-end and back-end development. Right now, I’m thoroughly enjoying web development, but I also consider data analysis as a backup career if I ever decide to explore a different path.
+                    </p>
+                </div>
+                <br>
+                <hr>
+            
+            <div section id="links" class="LINKS">               
+                <div class="social">
+                    <h2>Social Links</h2>
+                    <a href="https://www.facebook.com/ae.goethe" target="_blank">모 Facebook</a>
+                    <a href="https://x.com/beomycaa" target="_blank">𓅃 X</a>
+                    <a href="https://www.instagram.com/aezsce/" target="_blank">[◉¯] Instagram</a>
+                    <a href="https://www.tiktok.com/@aezscee" target="_blank">𓍢ִ໋🀦 Tiktok</a>
+                    <br><br>
+                    <hr> <h5>© Mica Ace Cordivilla 2025. All Rights Reserved.</h5>                    
+                </div>                  
+            </section>                               
+        </body>
+</HTML>
